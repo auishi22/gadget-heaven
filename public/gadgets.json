@@ -1,0 +1,268 @@
+[
+  {
+    "id": "P001",
+    "title": "Apple iPhone 15 Pro Max",
+    "image": "https://mobilebuzzbd.com/wp-content/uploads/2023/10/iPhone-15-Pro-Max.jpg",
+    "category": "Smartphones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "color": "Space Black"
+  },
+  {
+    "id": "P002",
+    "title": "Samsung Galaxy S23 Ultra",
+    "image": "https://mobilebuzzbd.com/wp-content/uploads/2023/07/Galaxy-S23-Ultra-Lavender.jpg",
+    "category": "Smartphones",
+    "price": 1199,
+    "description": "Powerful Android flagship with a 200MP camera.",
+    "specification": [
+      "6.8-inch QHD+ AMOLED",
+      "Snapdragon 8 Gen 2",
+      "200MP Main Camera",
+      "S Pen support"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "color": "Phantom Black"
+  },
+  {
+    "id": "P003",
+    "title": "Google Pixel 8 Pro",
+    "image": "https://kryinternational.com/wp-content/uploads/2024/02/Google-Pixel-8-Pro-price-in-bangladesh-n.jpg",
+    "category": "Smartphones",
+    "price": 999,
+    "description": "Clean Android experience and next-gen Tensor chip.",
+    "specification": [
+      "6.7-inch LTPO OLED",
+      "Tensor G3 chip",
+      "50MP triple camera",
+      "5 years of updates"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "color": "Obsidian"
+  },
+  {
+    "id": "P004",
+    "title": "OnePlus 11",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-11-(3)-4957.jpg",
+    "category": "Smartphones",
+    "price": 699,
+    "description": "Fast charging and flagship specs at a fair price.",
+    "specification": [
+      "Snapdragon 8 Gen 2",
+      "100W SuperVOOC charging",
+      "120Hz AMOLED display"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "color": "Titan Black"
+  },
+  {
+    "id": "P005",
+    "title": "Xiaomi 13 Pro",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-13-Pro-Ceramic-White-4073.jpg",
+    "category": "Smartphones",
+    "price": 849,
+    "description": "Excellent Leica-tuned cameras with flagship performance.",
+    "specification": [
+      "6.73-inch AMOLED",
+      "Leica triple camera",
+      "Snapdragon 8 Gen 2"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "color": "Ceramic White"
+  },
+  {
+    "id": "P006",
+    "title": "Sony Xperia 1 V",
+    "image": "https://www.clove.co.uk/cdn/shop/products/99b59a08-7eff-4238-b91e-a9e76b15f03f.jpg?v=1652285871",
+    "category": "Smartphones",
+    "price": 1399,
+    "description": "Cinematic display and professional-grade camera system.",
+    "specification": [
+      "4K HDR OLED",
+      "Triple 12MP camera",
+      "120Hz refresh rate"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "color": "Frosted Gray"
+  },
+  {
+    "id": "P007",
+    "title": "MacBook Air M2",
+    "image": "https://adminapi.vertech.com.bd/storage/media/large/MacBook-Air-M2-Space-Gray-5005.jpg",
+    "category": "Laptops",
+    "price": 1249,
+    "description": "Slim and powerful with Apple’s M2 chip.",
+    "specification": [
+      "13.6-inch Liquid Retina",
+      "M2 Chip",
+      "256GB SSD, 8GB RAM"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "weight": "1.24kg"
+  },
+  {
+    "id": "P008",
+    "title": "Dell XPS 15",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/XPS-15-9530-c-1421.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "Premium ultrabook with amazing display and build.",
+    "specification": [
+      "15.6-inch 4K UHD+",
+      "Intel i7 13th Gen",
+      "1TB SSD, 16GB RAM"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "weight": "1.8kg"
+  },
+  {
+    "id": "P009",
+    "title": "Apple Watch Series 9",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
+    "category": "Smart Watches",
+    "price": 599,
+    "description": "Advanced health features and seamless integration with iPhone.",
+    "specification": [
+      "Always-on display",
+      "ECG, SpO2, Temp sensors",
+      "WatchOS 10"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "color": "Midnight"
+  },
+  {
+    "id": "P010",
+    "title": "Samsung Galaxy Watch 6",
+    "image": "https://diamu.com.bd/wp-content/uploads/2023/08/Samsung-Galaxy-Watch-6-44mm-1.jpg",
+    "category": "Smart Watches",
+    "price": 449,
+    "description": "Beautiful AMOLED display and comprehensive fitness tracking.",
+    "specification": [
+      "Wear OS",
+      "Heart rate, sleep, stress tracking",
+      "Samsung Health"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "color": "Graphite"
+  },
+  {
+    "id": "P011",
+    "title": "Apple iPad Pro 12.9 (M2)",
+    "image": "https://assets.gadgetandgear.com/upload/product/20221118_1668765206_474871.jpeg",
+    "category": "Tablets",
+    "price": 1099,
+    "description": "Liquid Retina XDR display, M2 chip, and powerful multitasking for creatives.",
+    "specification": [
+      "12.9-inch Liquid Retina XDR display",
+      "Apple M2 chip",
+      "128GB/256GB/512GB/1TB/2TB storage options",
+      "Supports Apple Pencil 2"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "color": "Space Gray"
+  },
+  {
+    "id": "P012",
+    "title": "Samsung Galaxy Tab S9 Ultra",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Tab-S9-Ultra-Beige-8012.jpg",
+    "category": "Tablets",
+    "price": 1199,
+    "description": "Massive AMOLED display, multitasking support, and S Pen.",
+    "specification": [
+      "14.6-inch Dynamic AMOLED 2X",
+      "Snapdragon 8 Gen 2",
+      "S Pen included",
+      "120Hz refresh rate"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "color": "Graphite"
+  },
+  {
+    "id": "P013",
+    "title": "Xiaomi Pad 6",
+    "image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/product/Xiaomi/Pad6/Xiaomi-Pad-6-Mist-Blue-6649-800x800.jpg",
+    "category": "Tablets",
+    "price": 399,
+    "description": "High refresh rate display with great performance at a budget.",
+    "specification": [
+      "11-inch 2.8K LCD, 144Hz",
+      "Snapdragon 870",
+      "8840mAh battery",
+      "Dolby Atmos speakers"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "color": "Graphite Gray"
+  },
+  {
+    "id": "P014",
+    "title": "Sony WH-1000XM5",
+    "image": "https://diamu.com.bd/wp-content/uploads/2022/05/Sony-WH-1000XM5-Wireless-Headphones.jpg",
+    "category": "Headphones",
+    "price": 399,
+    "description": "Industry-leading noise cancellation and adaptive sound control.",
+    "specification": [
+      "30-hour battery life",
+      "Touch controls",
+      "LDAC & Hi-Res Audio",
+      "Bluetooth 5.2"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "color": "Black"
+  },
+  {
+    "id": "P015",
+    "title": "AirPods Max",
+    "image": "https://assets.gadgetandgear.com/upload/media/airpods-max-usb-c-midnight-mww43za-a.jpeg",
+    "category": "Headphones",
+    "price": 549,
+    "description": "Apple's premium over-ear headphones with spatial audio.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Spatial Audio",
+      "Up to 20 hours battery",
+      "H1 chip"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "color": "Sky Blue"
+  },
+  {
+    "id": "P016",
+    "title": "Bose QuietComfort 45",
+    "image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Accessories/BOSE/QuietComfort%2045/Brothers%20-%20QuietComfort%2045%20(1)-800x800.jpg",
+    "category": "Headphones",
+    "price": 329,
+    "description": "Comfort-focused wireless ANC headphones from Bose.",
+    "specification": [
+      "Active Noise Cancelling",
+      "24-hour battery",
+      "USB-C charging",
+      "Multi-device pairing"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "color": "White Smoke"
+  }
+]
