@@ -133,13 +133,13 @@ const DetailCard = ({ gadget }) => {
               disabled={wishlist}
               onClick={() => handleAddToWishlist(gadget)}
               className={`text-2xl border rounded-full p-2 transition duration-300 hover:scale-105 ${
-                wishlist ? "border-red-600 " : ""
+                wishlist ? "border-red-600 " : " border-gray-50"
               }`}
             >
               <span
                 className={`text-xl ${
-                  wishlist ? "text-red-500 " : ""
-                } transition-colors`}
+                  wishlist ? "text-red-500 " : "text-gray-500"
+                }`}
               >
                 <FaHeart />
               </span>{" "}

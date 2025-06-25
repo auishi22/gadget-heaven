@@ -31,6 +31,13 @@ const getCartTotal = () => {
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
   return totalPrice;
 };
-// remove a coffee from local storage
 
-export { addToCart, getAllGadgets,getCartTotal };
+// remove a coffee from local storage
+const removeToCart = (id) => {
+  const cart = getAllGadgets();
+  const remaining = [...cart].filter((item) => item.id !== id);
+  localStorage.setItem("cart", JSON.stringify(remaining));
+  toast.success("Removed from cart!");
+};
+
+export { addToCart, getAllGadgets, getCartTotal, removeToCart };

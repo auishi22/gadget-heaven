@@ -1,14 +1,12 @@
 import { useState } from "react";
 import CartCard from "../Components/CartCard";
-import { getAllGadgets, getCartTotal } from "../Utilities/cart";
+import { getAllGadgets, getCartTotal, removeToCart } from "../Utilities/cart";
 import { GrSort } from "react-icons/gr";
 
 const Cart = () => {
   const cart = getAllGadgets();
   const [gadgets, setGadgets] = useState(cart);
   const [total, setTotal] = useState(getCartTotal());
-
-  
 
   const handleSort = (sortBy) => {
     if (sortBy == "price") {
@@ -17,12 +15,24 @@ const Cart = () => {
     }
   };
 
+  // handle remove button
+  const handleRemove = (id) => {
+   removeToCart(id);
+    const remainning = [...gadgets].filter((item) => item.id !== id);
+    setGadgets(remainning);
+    setTotal(getCartTotal())
+    getAllGadgets()
+    
+  };
+
   return (
     <div className=" bg-base-200 container mx-auto  p-10">
       <div className="flex justify-between px-32 py-8">
         <h1 className="text-2xl text-gray-700 font-semibold">Cart</h1>
         <div className="flex gap-4 justify-center items-center">
-          <h1 className="text-2xl text-gray-700 font-semibold">Total Cost: {total} </h1>
+          <h1 className="text-2xl text-gray-700 font-semibold">
+            Total Cost: {total}{" "}
+          </h1>
           <button
             onClick={() => handleSort("price")}
             className="btn rounded-full border-purple-600 text-purple-600 flex items-center gap-2"
@@ -36,7 +46,7 @@ const Cart = () => {
       </div>
       <div className="space-y-8 flex flex-col justify-center items-center">
         {gadgets.map((item) => (
-          <CartCard item={item} />
+          <CartCard item={item} handleRemove={handleRemove} />
         ))}
       </div>
     </div>

@@ -1,11 +1,18 @@
 import { useNavigate } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
+import { removeToCart } from "../Utilities/cart";
 
-const CartCard = ({ item }) => {
+const CartCard = ({ item,handleRemove }) => {
   const { id, title, description, price, image } = item;
   const navigate = useNavigate();
+
+  
   return (
-    <div onClick={()=>navigate(`/gadget/${id}`)} class="w-[1226px] bg-base-200  bg-white rounded-3xl shadow-xl transform transition hover:scale-105">
-      <div class="p-6 flex items-center flex-col gap-10 lg:flex-row">
+    <div class="w-[1226px] bg-base-200 flex bg-white rounded-3xl shadow-xl ">
+      <div
+        onClick={() => navigate(`/gadget/${id}`)}
+        className="p-6 flex  items-center flex-col gap-10 lg:flex-row"
+      >
         <img
           src={image}
           class="w-[200px] h-[150px] object-contain rounded-lg shadow- border-2 border-base-300"
@@ -18,6 +25,12 @@ const CartCard = ({ item }) => {
           </h4>
         </div>
       </div>
+      <button onClick={() => handleRemove(id)}>
+        <h1 className="ml-96 p-1 rounded-full text-xl text-red-600 border border-red-600 hover:bg-red-200 transform transition hover:scale-110">
+          {" "}
+          <RxCross2 />{" "}
+        </h1>
+      </button>
     </div>
   );
 };

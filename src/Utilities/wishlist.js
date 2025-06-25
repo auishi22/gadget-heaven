@@ -25,4 +25,12 @@ const addToWishlist = (gadget) => {
   console.log(wishlist);
 };
 
-export { addToWishlist, getAllWishlist };
+// remove a coffee from local storage
+const removeToWishlist = (id) => {
+  const cart = getAllWishlist();
+  const remaining = [...cart].filter((item) => item.id !== id);
+  localStorage.setItem("cart", JSON.stringify(remaining));
+  toast.success("Removed from cart!");
+};
+
+export { addToWishlist, getAllWishlist,removeToWishlist };
