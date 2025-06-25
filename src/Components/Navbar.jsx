@@ -3,13 +3,19 @@ import { PiShoppingCart } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { getAllGadgets } from "../Utilities/cart";
 import { getAllWishlist } from "../Utilities/wishlist";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const cart = getAllGadgets();
-  const wishlist = getAllWishlist();
+  const [cartLen, setCartLen] = useState(0);
+  const [wishlistLen, setWishlistLen] = useState(0);
+
+   useEffect(() => {
+    setCartLen(getAllGadgets().length);
+    setWishlistLen(getAllWishlist().length);
+  }, [location]);
 
   return (
     <div
@@ -71,24 +77,36 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-          isHome ? "text-white" : isActive ? "relative text-purple-600 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-600 after:transition-all after:duration-300 after:ease-in-out after:w-full" : "text-gray-500"
-        }
+              isHome
+                ? "text-white"
+                : isActive
+                ? "relative text-purple-600 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-600 after:transition-all after:duration-300 after:ease-in-out after:w-full"
+                : "text-gray-500"
+            }
           >
             Home
           </NavLink>
           <NavLink
             to="/statistic"
             className={({ isActive }) =>
-          isHome ? "text-white" : isActive ? "relative text-purple-600 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-600 after:transition-all after:duration-300 after:ease-in-out after:w-full " : "text-gray-500"
-        }
+              isHome
+                ? "text-white"
+                : isActive
+                ? "relative text-purple-600 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-600 after:transition-all after:duration-300 after:ease-in-out after:w-full "
+                : "text-gray-500"
+            }
           >
             Statistic
           </NavLink>
           <NavLink
             to="/dashboard"
             className={({ isActive }) =>
-          isHome ? "text-white" : isActive ? "relative text-purple-600 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-600 after:transition-all after:duration-300 after:ease-in-out after:w-full" : "text-gray-500"
-        }
+              isHome
+                ? "text-white"
+                : isActive
+                ? "relative text-purple-600 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-600 after:transition-all after:duration-300 after:ease-in-out after:w-full"
+                : "text-gray-500"
+            }
           >
             Dashboard
           </NavLink>
@@ -102,9 +120,9 @@ const Navbar = () => {
           <h2 className="relative btn text-xl rounded-full p-2">
             <PiShoppingCart />{" "}
           </h2>
-          {cart.length > 0 && (
+          {cartLen > 0 && (
             <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-              {cart.length}
+              {cartLen}
             </span>
           )}
         </button>
@@ -115,9 +133,9 @@ const Navbar = () => {
           <h2 className="relative btn text-xl rounded-full p-2">
             <CiHeart />{" "}
           </h2>
-          {wishlist.length > 0 && (
+          {wishlistLen > 0 && (
             <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-              {wishlist.length}
+              {wishlistLen}
             </span>
           )}
         </button>

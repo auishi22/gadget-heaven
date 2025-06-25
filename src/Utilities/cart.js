@@ -38,6 +38,8 @@ const removeToCart = (id) => {
   const remaining = [...cart].filter((item) => item.id !== id);
   localStorage.setItem("cart", JSON.stringify(remaining));
   toast.success("Removed from cart!");
+  window.location.reload(); // just after add/remove
+
 };
 
 export { addToCart, getAllGadgets, getCartTotal, removeToCart };

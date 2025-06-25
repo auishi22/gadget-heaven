@@ -29,8 +29,10 @@ const addToWishlist = (gadget) => {
 const removeToWishlist = (id) => {
   const cart = getAllWishlist();
   const remaining = [...cart].filter((item) => item.id !== id);
-  localStorage.setItem("cart", JSON.stringify(remaining));
-  toast.success("Removed from cart!");
+  localStorage.setItem("wishlist", JSON.stringify(remaining));
+  toast.success("Removed from wishlist!");
+  window.location.reload(); // just after add/remove
+
 };
 
 export { addToWishlist, getAllWishlist,removeToWishlist };

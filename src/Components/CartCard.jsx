@@ -8,7 +8,13 @@ const CartCard = ({ item,handleRemove }) => {
 
   
   return (
-    <div class="w-[1226px] bg-base-200 flex bg-white rounded-3xl shadow-xl ">
+    <div class="relative w-[1226px] bg-base-200 flex bg-white rounded-3xl shadow-xl ">
+       <button
+    onClick={() => handleRemove(id)}
+    className="absolute top-6 right-6 text-red-500 hover:bg-red-100 border border-red-500 rounded-full p-1"
+  >
+    <RxCross2 />
+  </button>
       <div
         onClick={() => navigate(`/gadget/${id}`)}
         className="p-6 flex  items-center flex-col gap-10 lg:flex-row"
@@ -25,12 +31,6 @@ const CartCard = ({ item,handleRemove }) => {
           </h4>
         </div>
       </div>
-      <button onClick={() => handleRemove(id)}>
-        <h1 className="ml-96 p-1 rounded-full text-xl text-red-600 border border-red-600 hover:bg-red-200 transform transition hover:scale-110">
-          {" "}
-          <RxCross2 />{" "}
-        </h1>
-      </button>
     </div>
   );
 };

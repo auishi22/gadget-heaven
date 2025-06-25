@@ -8,7 +8,6 @@ const MainPage = () => {
   const isHome = location.pathname === "/";
   return (
     <div>
-      <Toaster />
       {/* Navbar */}
       <div className={`${isHome ? "backdrop-blur " : "bg-white"}`}>
         <Navbar />
